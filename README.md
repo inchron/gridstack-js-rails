@@ -1,14 +1,14 @@
-# Gristack::Js::Rails
+# Gridstack::Js::Rails
 
-gristack-js-rails provides the gristack.js library as a Rails engine to use it within the asset pipeline.
+gridstack-js-rails provides the gridstack.js library as a Rails engine to use it within the asset pipeline.
 
-Original Git source - https://github.com/gristack/gristack.js
+Original Git source - https://github.com/gridstack/gridstack.js
 
 ## Installation
 
 Add this to your Gemfile:
 
-    $ gem gristack-js-rails
+    $ gem gridstack-js-rails
 
 and run bundle install.
 
@@ -17,13 +17,13 @@ and run bundle install.
 In your `application.js`, include the following:
 
 ```
-//= require gristack-all
+//= require gridstack-all
 ```
 
 In your `application.css`, include the following:
 
 ```
-*= require gristack.min
+*= require gridstack.min
 ```
 
 ## License

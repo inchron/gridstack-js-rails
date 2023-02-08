@@ -35,10 +35,12 @@ echo "Updating $ORIGINAL_REPO assets from $_current_version to $_latest_version.
 
 curl -L -o $_root_dir/vendor/assets/javascripts/gridstack-all.js https://unpkg.com/gridstack@$_latest_version/dist/gridstack-all.js
 curl -L -o $_root_dir/vendor/assets/stylesheets/gridstack.min.css https://unpkg.com/gridstack@$_latest_version/dist/gridstack.min.css
+curl -L -o $_root_dir/vendor/assets/stylesheets/gridstack-extra.min.css https://unpkg.com/gridstack@$_latest_version/dist/gridstack-extra.min.css
 sed -i "s/\(.*VERSION\s*=\s*\"\)\(.*\)\"/\1$_latest_version\"/" $_version_file
 
 git add $_root_dir/vendor/assets/javascripts/gridstack-all.js
 git add $_root_dir/vendor/assets/stylesheets/gridstack.min.css
+git add $_root_dir/vendor/assets/stylesheets/gridstack-extra.min.css
 git add $_version_file
 git commit -m "Updated vendor assets of '$ORIGINAL_REPO' to latest version ($_latest_version)."
 
